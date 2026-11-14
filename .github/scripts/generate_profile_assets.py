@@ -33,8 +33,9 @@ query($login: String!) {
 """
 
 MONO = "ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace"
-CYAN, BLUE, PURPLE = "#22d3ee", "#3b82f6", "#a78bfa"
-LEVELS = ["#0c1527", "#0b4a6b", "#0e7490", "#22d3ee", "#a5f3fc"]
+# Black, white and ash palette
+CYAN, BLUE, PURPLE = "#f2f2f2", "#9a9a9a", "#bdbdbd"
+LEVELS = ["#151515", "#2f2f2f", "#575757", "#8f8f8f", "#f2f2f2"]
 
 
 def fetch():
@@ -90,14 +91,14 @@ def stats_svg(total, cur, longest, start, end, repos, stars):
 <defs>
 <linearGradient id="ln" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{CYAN}" stop-opacity="0"/><stop offset="0.5" stop-color="{CYAN}" stop-opacity="0.8"/><stop offset="1" stop-color="{CYAN}" stop-opacity="0"/></linearGradient>
 <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{CYAN}"/><stop offset="1" stop-color="{PURPLE}"/></linearGradient>
-<style>.m{{font-family:{MONO}}}.n{{font-family:{MONO};font-weight:700;fill:#e6f3ff}}.l{{font-family:{MONO};font-size:12px;fill:{CYAN};letter-spacing:1px}}.s{{font-family:{MONO};font-size:10px;fill:#4b5f7b}}</style>
+<style>.m{{font-family:{MONO}}}.n{{font-family:{MONO};font-weight:700;fill:#f0f0f0}}.l{{font-family:{MONO};font-size:12px;fill:{CYAN};letter-spacing:1px}}.s{{font-family:{MONO};font-size:10px;fill:#6e6e6e}}</style>
 </defs>
-<rect x="2" y="2" width="996" height="146" rx="16" fill="#070d1c" stroke="#12304a"/>
+<rect x="2" y="2" width="996" height="146" rx="16" fill="#0b0b0b" stroke="#262626"/>
 <line x1="333" y1="26" x2="333" y2="124" stroke="url(#ln)"/><line x1="667" y1="26" x2="667" y2="124" stroke="url(#ln)"/>
 <text x="167" y="76" text-anchor="middle" class="n" font-size="40">{total}</text>
 <text x="167" y="100" text-anchor="middle" class="l">TOTAL CONTRIBUTIONS</text>
 <text x="167" y="120" text-anchor="middle" class="s">{escape(start)} - {escape(end)}</text>
-<circle cx="500" cy="62" r="34" fill="none" stroke="#12304a" stroke-width="5"/>
+<circle cx="500" cy="62" r="34" fill="none" stroke="#262626" stroke-width="5"/>
 <circle cx="500" cy="62" r="34" fill="none" stroke="url(#ring)" stroke-width="5" stroke-linecap="round" stroke-dasharray="{circ * frac:.1f} {circ:.1f}" transform="rotate(-90 500 62)"><animate attributeName="stroke-dasharray" from="0 {circ:.1f}" to="{circ * frac:.1f} {circ:.1f}" dur="1.4s" fill="freeze"/></circle>
 <text x="500" y="71" text-anchor="middle" class="n" font-size="26">{cur}</text>
 <text x="500" y="116" text-anchor="middle" class="l">CURRENT STREAK</text>
@@ -136,13 +137,13 @@ def activity_svg(weeks, total):
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="{width}" height="{height}" role="img" aria-label="GitHub contribution activity for {escape(USER)}: {total} contributions in the last year">
 <defs>
 <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{CYAN}"/><stop offset="1" stop-color="{PURPLE}"/></linearGradient>
-<style>.s{{font-family:{MONO};font-size:10px;fill:#4b5f7b;letter-spacing:1px}}.l{{font-family:{MONO};font-size:11px;fill:{CYAN};letter-spacing:2px}}</style>
+<style>.s{{font-family:{MONO};font-size:10px;fill:#6e6e6e;letter-spacing:1px}}.l{{font-family:{MONO};font-size:11px;fill:{CYAN};letter-spacing:2px}}</style>
 </defs>
-<rect x="1" y="1" width="{width - 2}" height="{height - 2}" rx="16" fill="#070d1c" stroke="#12304a"/>
+<rect x="1" y="1" width="{width - 2}" height="{height - 2}" rx="16" fill="#0b0b0b" stroke="#262626"/>
 <text x="{left}" y="26" class="l">CONTRIBUTION.ACTIVITY</text>
 <text x="{width - 24}" y="26" text-anchor="end" class="s">{total} IN THE LAST YEAR</text>
 {"".join(parts)}
-<rect x="{left}" y="{base}" width="{prog_w}" height="4" rx="2" fill="#12304a"/>
+<rect x="{left}" y="{base}" width="{prog_w}" height="4" rx="2" fill="#262626"/>
 <rect x="{left}" y="{base}" width="{prog_w * done:.0f}" height="4" rx="2" fill="url(#bar)"><animate attributeName="width" from="0" to="{prog_w * done:.0f}" dur="1.6s" fill="freeze"/></rect>
 <text x="{left}" y="{base + 38}" class="s">{today.year} PROGRESS {int(done * 100)}%</text>
 <text x="{legend_x}" y="{base + 38}" class="s">LESS</text>{legend}<text x="{legend_x + 40 + 5 * 16 + 4}" y="{base + 38}" class="s">MORE</text>
