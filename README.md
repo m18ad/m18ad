@@ -1,16 +1,28 @@
-## Hi there 👋
+<div align="center">
 
-<!--
-**m18ad/m18ad** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<img src="./assets/hero.svg" alt="Animated developer dashboard for Michael (m18ad): founder and full-stack developer building Ignara" width="100%">
 
-Here are some ideas to get you started:
+<img src="./assets/stats.svg" alt="GitHub statistics: total contributions, current streak and public repositories" width="100%">
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<img src="./assets/activity.svg" alt="GitHub contribution activity for the last year" width="100%">
+
+<br>
+
+<a href="https://x.com/m18ad_"><img src="./assets/social-x.svg" height="40" alt="X"></a>
+<a href="https://m18ad.vercel.app"><img src="./assets/social-portfolio.svg" height="40" alt="Portfolio"></a>
+<a href="https://ignara.vercel.app"><img src="./assets/social-ignara.svg" height="40" alt="Ignara"></a>
+<a href="mailto:michealadesomoju6@gmail.com"><img src="./assets/social-email.svg" height="40" alt="Email"></a>
+
+</div>
+
+<br>
+
+### Projects
+
+| Project | What it is |
+| --- | --- |
+| [**Ignara**](https://ignara.vercel.app) | My main startup. An AI operating system for solopreneurs. |
+| [**Snapjoy Muse**](https://github.com/m18ad/snapjoy-muse) | TypeScript, React and TanStack Start. |
+| **CULTSP** | A trading agent. Work in progress. |
+
+<sub>The dashboard, stats and activity graph above are SVG files in `assets/`. A GitHub Action refreshes the stats and the graph every 6 hours straight from the GitHub API, so nothing depends on an outside image service.</sub>
