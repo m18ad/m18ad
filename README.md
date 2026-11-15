@@ -20,7 +20,19 @@
 
 ### Languages
 
-`TypeScript` `Python` `Go` `C++` `HTML` `CSS`
+`Python` `JavaScript` `TypeScript` `Java` `C` `C++` `C#` `Go` `Rust` `Kotlin` `Swift` `SQL` `Ruby` `Dart` `Solidity`
+
+### Stack by layer
+
+| Layer | Languages and tools |
+| --- | --- |
+| Frontend | TypeScript, JavaScript, HTML, CSS, Dart, React, Next.js |
+| Mobile | Kotlin, Swift, Dart, Java |
+| Backend and data | Python, Go, Java, Ruby, C#, SQL, Node.js, Supabase, PostgreSQL |
+| AI and automation | Python, TypeScript |
+| Systems | C, C++, Rust |
+| Web3 | Solidity, Rust, Solana |
+| Delivery | Git, GitHub Actions, Vercel |
 
 ### Projects
 
