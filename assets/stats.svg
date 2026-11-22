@@ -6,14 +6,14 @@
 </defs>
 <rect x="2" y="2" width="996" height="146" rx="16" fill="#0b0b0b" stroke="#262626"/>
 <line x1="333" y1="26" x2="333" y2="124" stroke="url(#ln)"/><line x1="667" y1="26" x2="667" y2="124" stroke="url(#ln)"/>
-<text x="167" y="76" text-anchor="middle" class="n" font-size="40">3483</text>
+<text x="167" y="76" text-anchor="middle" class="n" font-size="40">3501</text>
 <text x="167" y="100" text-anchor="middle" class="l">TOTAL CONTRIBUTIONS</text>
-<text x="167" y="120" text-anchor="middle" class="s">Nov 16 - Nov 21</text>
+<text x="167" y="120" text-anchor="middle" class="s">Nov 23 - Nov 22</text>
 <circle cx="500" cy="62" r="34" fill="none" stroke="#262626" stroke-width="5"/>
 <circle cx="500" cy="62" r="34" fill="none" stroke="url(#ring)" stroke-width="5" stroke-linecap="round" stroke-dasharray="213.6 213.6" transform="rotate(-90 500 62)"><animate attributeName="stroke-dasharray" from="0 213.6" to="213.6 213.6" dur="1.4s" fill="freeze"/></circle>
-<text x="500" y="71" text-anchor="middle" class="n" font-size="26">23</text>
+<text x="500" y="71" text-anchor="middle" class="n" font-size="26">24</text>
 <text x="500" y="116" text-anchor="middle" class="l">CURRENT STREAK</text>
-<text x="500" y="135" text-anchor="middle" class="s">longest: 23 days</text>
+<text x="500" y="135" text-anchor="middle" class="s">longest: 24 days</text>
 <text x="833" y="76" text-anchor="middle" class="n" font-size="40">2</text>
 <text x="833" y="100" text-anchor="middle" class="l">PUBLIC REPOSITORIES</text>
 <text x="833" y="120" text-anchor="middle" class="s">0 stars earned</text>
